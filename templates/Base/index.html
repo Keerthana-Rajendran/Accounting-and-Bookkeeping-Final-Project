@@ -1,0 +1,71 @@
+{% load static %}
+{% block content %}
+
+<style media="screen">
+    .pic {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      background-image: url('{% static "IMG/img.jpg" %}');
+      height: 500px;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .btn{
+      text-align: center;
+      border: none;
+      background-color: #eeeeee;
+      color: #000000;
+      border: 2px solid #4caf50;
+      width: 250px;
+      margin-left: 550px;
+    }
+  .jumbotron h5,
+  h3, .text-center {
+    text-align: center;
+  }
+  .alert {
+    margin: 0px;
+  }
+  a{
+    text-decoration: none;
+    color: #eeeeee;
+  }
+  button{
+    padding: 12px;
+    color: #eeeeee;
+  }
+  button.btn{
+    color: #eeeeee;
+  }
+  .glow {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    margin: revert;
+  }
+
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000, 0 0 50px #9554b3, 0 0 60px #9554b3, 0 0 70px #9554b3;
+    }
+
+    to {
+      text-shadow: 0 0 20px #eeeeee, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+</style>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<div class="pic">
+<div class="text-center">
+  <h5 class="display-3 glow">Handle your buisness accounts easily</h5>
+</div><br><br><br><br><br>
+<button type="submit" class="btn" style="color: black;"><a href="/login" style="color:black;">Login</a></button>
+</div>
+{% endblock content %}
+<br><br>
+{% include "Base/footer.html" %}

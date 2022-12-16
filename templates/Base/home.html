@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Account Keeper</title>
+  <style>
+    .pic {
+      margin-top: 55px;
+      margin-bottom: 0px;
+      background-image: url('{% static "IMG/pic3.webp" %}');
+      height: auto;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="pic">
+  {% include "Base/navbar.html" %}
+</div>
+</body>
+
+</html>
